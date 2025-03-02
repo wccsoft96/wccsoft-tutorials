@@ -35,22 +35,24 @@ h2 {
   display: inline-block;
 }
 
-.dropdown-button {
-  background: #2575fc;
-  color: white;
+button {
+  background-color: #000000; /* Dark background */
+  color: #FFFFFF; /* Light text */
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
-  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-.dropdown-button:hover {
-  background: #1a5bbf;
+
+.dropdown button:hover {
+  background-color: #333333; /* Slightly lighter dark background */
+  color: #FFFFFF; /* Light text */
 }
 
-.dropdown-menu {
+.dropdown button:focus {
+  outline: 2px solid #005FCC; /* Focus indicator with sufficient contrast */
+}
+ul {
   position: absolute;
   top: 100%;
   left: 0;
@@ -63,32 +65,12 @@ h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-menu li {
+li {
   padding: 10px 20px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
-.dropdown-menu li:hover {
+li:hover {
   background: #f4f4f4;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-label {
-  font-size: 1rem;
-  color: #333;
-}
-
-input {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-  width: 200px;
 }
